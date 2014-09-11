@@ -1,0 +1,9 @@
+{
+  "def1": "high",
+  "id1": 111,
+  "def2": "remote.testParent-inverse",
+  "id2": 222,
+  "def3": "low",
+  "id3": 333,
+  "targetId2": -1
+}
