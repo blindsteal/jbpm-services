@@ -1,4 +1,4 @@
-package com.livinglab;
+package de.livinglab;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

@@ -1,4 +1,4 @@
-package com.livinglab;
+package de.livinglab;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

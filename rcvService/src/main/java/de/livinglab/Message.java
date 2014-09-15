@@ -1,7 +1,10 @@
-package com.livinglab;
+package de.livinglab;
 
-public class Message {
+import java.io.Serializable;
 
+public class Message implements Serializable{
+
+	private static final long serialVersionUID = 1319508796735317931L;
 	private String def1, def2, def3;
 	private int id1, id2, id3;
 	private String v2;
@@ -124,7 +127,9 @@ public class Message {
 	public String toString() {
 		return "Message [def1=" + def1 + ", def2=" + def2 + ", def3=" + def3
 				+ ", id1=" + id1 + ", id2=" + id2 + ", id3=" + id3 + ", v2="
-				+ v2 + ", msg=" + msg + ", targetId2=" + targetId2 + "]";
+				+ v2 + ", msg=" + msg + ", source2=" + source2 + ", targetId2="
+				+ targetId2 + "]";
 	}
+	
 	
 }

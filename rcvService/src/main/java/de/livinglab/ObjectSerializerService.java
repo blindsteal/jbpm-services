@@ -1,4 +1,4 @@
-package com.livinglab;
+package de.livinglab;
 
 import java.io.Serializable;
 

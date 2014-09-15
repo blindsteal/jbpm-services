@@ -4014,3 +4014,746 @@ org.springframework.web.client.HttpServerErrorException: 500 Internal Server Err
 2014-09-09 17:29:09.081  INFO 10639 [Thread-1] --- j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2014-09-09 17:29:09.081  INFO 10639 [Thread-1] --- org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
 2014-09-09 17:29:09.087  INFO 10639 [Thread-1] --- org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2014-09-11 16:43:56.445  INFO 15514 [main] --- com.livinglab.Application                : Starting Application on esbdev-VirtualBox with PID 15514 (/home/esbdev/git/jbpm-services/rcvService/target/classes started by esbdev in /home/esbdev/git/jbpm-services/rcvService)
+2014-09-11 16:43:56.534  INFO 15514 [main] --- ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d09644a: startup date [Thu Sep 11 16:43:56 CEST 2014]; root of context hierarchy
+2014-09-11 16:43:57.708  INFO 15514 [main] --- o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2014-09-11 16:43:59.524  INFO 15514 [main] --- trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c3941fb6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-09-11 16:43:59.572  INFO 15514 [main] --- trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-09-11 16:43:59.582  INFO 15514 [main] --- trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-09-11 16:43:59.598  INFO 15514 [main] --- trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-09-11 16:44:00.491  INFO 15514 [main] --- .t.TomcatEmbeddedServletContainerFactory : Server initialized with port: 8010
+2014-09-11 16:44:01.176  INFO 15514 [main] --- o.apache.catalina.core.StandardService   : Starting service Tomcat
+2014-09-11 16:44:01.177  INFO 15514 [main] --- org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.54
+2014-09-11 16:44:01.422  INFO 15514 [localhost-startStop-1] --- o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2014-09-11 16:44:01.422  INFO 15514 [localhost-startStop-1] --- o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4890 ms
+2014-09-11 16:44:02.903  INFO 15514 [localhost-startStop-1] --- o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2014-09-11 16:44:02.915  INFO 15514 [localhost-startStop-1] --- o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2014-09-11 16:44:05.456  INFO 15514 [main] --- j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-09-11 16:44:05.474  INFO 15514 [main] --- o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-09-11 16:44:05.574  INFO 15514 [main] --- org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.5.Final}
+2014-09-11 16:44:05.576  INFO 15514 [main] --- org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2014-09-11 16:44:05.578  INFO 15514 [main] --- org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2014-09-11 16:44:05.798  INFO 15514 [main] --- o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-09-11 16:44:06.026  INFO 15514 [main] --- org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-09-11 16:44:06.247  INFO 15514 [main] --- o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2014-09-11 16:44:06.600  INFO 15514 [main] --- org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2014-09-11 16:44:07.039  INFO 15514 [main] --- org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2014-09-11 16:44:08.029  INFO 15514 [main] --- o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2014-09-11 16:44:08.375  INFO 15514 [main] --- s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/send],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.livinglab.SendController.receiveMessage(java.lang.String,java.lang.String)
+2014-09-11 16:44:08.376  INFO 15514 [main] --- s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rcv],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.livinglab.RcvController.receiveMessage(javax.servlet.http.HttpServletRequest,com.livinglab.Message)
+2014-09-11 16:44:08.382  INFO 15514 [main] --- s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2014-09-11 16:44:08.385  INFO 15514 [main] --- s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2014-09-11 16:44:08.473  INFO 15514 [main] --- o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2014-09-11 16:44:08.481  INFO 15514 [main] --- o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2014-09-11 16:44:09.318  INFO 15514 [main] --- o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2014-09-11 16:44:09.500  INFO 15514 [main] --- s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8010/http
+2014-09-11 16:44:09.508  INFO 15514 [main] --- com.livinglab.Application                : Started Application in 14.092 seconds (JVM running for 15.405)
+2014-09-11 16:44:33.018  INFO 15514 [http-nio-8010-exec-1] --- o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2014-09-11 16:44:33.018  INFO 15514 [http-nio-8010-exec-1] --- o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2014-09-11 16:44:33.075  INFO 15514 [http-nio-8010-exec-1] --- o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 56 ms
+2014-09-11 16:44:33.211 ERROR 15514 [http-nio-8010-exec-1] --- o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at com.livinglab.SendController.receiveMessage(SendController.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:863)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1720)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1679)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2014-09-11 16:45:39.128  INFO 15514 [Thread-1] --- ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d09644a: startup date [Thu Sep 11 16:43:56 CEST 2014]; root of context hierarchy
+2014-09-11 16:45:39.133  INFO 15514 [Thread-1] --- o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2014-09-11 16:45:39.149  INFO 15514 [Thread-1] --- j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-09-11 16:45:39.153  INFO 15514 [Thread-1] --- org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2014-09-11 16:45:39.156  INFO 15514 [Thread-1] --- org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2014-09-11 16:47:44.775  INFO 15649 [main] --- de.livinglab.Application                 : Starting Application on esbdev-VirtualBox with PID 15649 (/home/esbdev/git/jbpm-services/rcvService/target/classes started by esbdev in /home/esbdev/git/jbpm-services/rcvService)
+2014-09-11 16:47:44.864  INFO 15649 [main] --- ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d09644a: startup date [Thu Sep 11 16:47:44 CEST 2014]; root of context hierarchy
+2014-09-11 16:47:46.021  INFO 15649 [main] --- o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2014-09-11 16:47:47.971  INFO 15649 [main] --- trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c3941fb6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-09-11 16:47:48.040  INFO 15649 [main] --- trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-09-11 16:47:48.061  INFO 15649 [main] --- trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-09-11 16:47:48.078  INFO 15649 [main] --- trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-09-11 16:47:49.432  INFO 15649 [main] --- .t.TomcatEmbeddedServletContainerFactory : Server initialized with port: 8010
+2014-09-11 16:47:50.084  INFO 15649 [main] --- o.apache.catalina.core.StandardService   : Starting service Tomcat
+2014-09-11 16:47:50.092  INFO 15649 [main] --- org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.54
+2014-09-11 16:47:50.333  INFO 15649 [localhost-startStop-1] --- o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2014-09-11 16:47:50.334  INFO 15649 [localhost-startStop-1] --- o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5473 ms
+2014-09-11 16:47:51.637  INFO 15649 [localhost-startStop-1] --- o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2014-09-11 16:47:51.648  INFO 15649 [localhost-startStop-1] --- o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2014-09-11 16:47:54.052  INFO 15649 [main] --- j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-09-11 16:47:54.083  INFO 15649 [main] --- o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-09-11 16:47:54.272  INFO 15649 [main] --- org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.5.Final}
+2014-09-11 16:47:54.274  INFO 15649 [main] --- org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2014-09-11 16:47:54.275  INFO 15649 [main] --- org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2014-09-11 16:47:54.475  INFO 15649 [main] --- o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-09-11 16:47:54.614  INFO 15649 [main] --- org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-09-11 16:47:54.823  INFO 15649 [main] --- o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2014-09-11 16:47:55.188  INFO 15649 [main] --- org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2014-09-11 16:47:55.194  INFO 15649 [main] --- org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2014-09-11 16:47:55.924  INFO 15649 [main] --- o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2014-09-11 16:47:56.220  INFO 15649 [main] --- s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/send],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void de.livinglab.SendController.receiveMessage(java.lang.String,java.lang.String)
+2014-09-11 16:47:56.221  INFO 15649 [main] --- s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rcv],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void de.livinglab.RcvController.receiveMessage(javax.servlet.http.HttpServletRequest,de.livinglab.Message)
+2014-09-11 16:47:56.228  INFO 15649 [main] --- s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2014-09-11 16:47:56.228  INFO 15649 [main] --- s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2014-09-11 16:47:56.332  INFO 15649 [main] --- o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2014-09-11 16:47:56.332  INFO 15649 [main] --- o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2014-09-11 16:47:57.193  INFO 15649 [main] --- o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2014-09-11 16:47:57.363  INFO 15649 [main] --- s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8010/http
+2014-09-11 16:47:57.371  INFO 15649 [main] --- de.livinglab.Application                 : Started Application in 13.714 seconds (JVM running for 14.992)
+2014-09-11 16:48:10.367  INFO 15649 [http-nio-8010-exec-1] --- o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2014-09-11 16:48:10.368  INFO 15649 [http-nio-8010-exec-1] --- o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2014-09-11 16:48:10.430  INFO 15649 [http-nio-8010-exec-1] --- o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 62 ms
+2014-09-11 16:48:11.090  INFO 15649 [http-nio-8010-exec-1] --- de.livinglab.SendController              : Sending to: http://localhost:8010/rcv, Msg: Message [def1=com.sample.bpmn.parent1, def2=com.sample.bpmn.parent2, def3=com.sample.bpmn.hello, id1=1, id2=2, id3=3, v2=1, msg=<msg>bbalbalablabal</msg>, source2=<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:tns="http://www.jboss.org/drools" xmlns="http://www.jboss.org/drools" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd" id="Definition" expressionLanguage="http://www.mvel.org/2.0" targetNamespace="http://www.jboss.org/drools" typeLanguage="http://www.java.com/javaTypes">
+  <bpmn2:itemDefinition id="_String" structureRef="String"/>
+  <bpmn2:itemDefinition id="_Integer" structureRef="Integer"/>
+  <bpmn2:itemDefinition id="_Float" structureRef="Float"/>
+  <bpmn2:itemDefinition id="_Boolean" structureRef="Boolean"/>
+  <bpmn2:process id="com.sample.bpmn.parent2" tns:version="1" tns:packageName="defaultPackage" tns:adHoc="false" name="parent2" isExecutable="true" processType="Private">
+    <bpmn2:startEvent id="_1" name="">
+      <bpmn2:outgoing>SequenceFlow_2</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:callActivity id="CallActivity_1" tns:waitForCompletion="true" tns:independent="false" name="Call sample" calledElement="com.sample.bpmn.hello">
+      <bpmn2:extensionElements>
+        <tns:onEntry-script scriptFormat="http://www.java.com/java">
+          <tns:script>kcontext.setVariable(&quot;id&quot;, kcontext.getProcessInstance().getId() + &quot;&quot;);</tns:script>
+        </tns:onEntry-script>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>SequenceFlow_2</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_1</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="InputOutputSpecification_3">
+        <bpmn2:dataInput id="DataInput_1" itemSubjectRef="_String" name="parentId"/>
+        <bpmn2:dataInput id="DataInput_2" itemSubjectRef="_String" name="parentId2"/>
+        <bpmn2:inputSet id="InputSet_1" name="Input Set 1">
+          <bpmn2:dataInputRefs>DataInput_1</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>DataInput_2</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_OutputSet_2" name="Output Set 2"/>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="DataInputAssociation_1">
+        <bpmn2:sourceRef>id</bpmn2:sourceRef>
+        <bpmn2:targetRef>DataInput_1</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="DataInputAssociation_2">
+        <bpmn2:sourceRef>parentId</bpmn2:sourceRef>
+        <bpmn2:targetRef>DataInput_2</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:callActivity>
+    <bpmn2:endEvent id="EndEvent_1" name="">
+      <bpmn2:incoming>SequenceFlow_1</bpmn2:incoming>
+      <bpmn2:terminateEventDefinition id="TerminateEventDefinition_1"/>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="SequenceFlow_1" tns:priority="1" name="" sourceRef="CallActivity_1" targetRef="EndEvent_1"/>
+    <bpmn2:sequenceFlow id="SequenceFlow_2" tns:priority="1" name="" sourceRef="_1" targetRef="CallActivity_1"/>
+    <bpmn2:dataObject id="id" name="id" itemSubjectRef="_String"/>
+    <bpmn2:dataObject id="parentId" name="parentId" itemSubjectRef="_String"/>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1" name="parent2">
+    <bpmndi:BPMNPlane id="BPMNPlane_Process_1" bpmnElement="com.sample.bpmn.parent2">
+      <bpmndi:BPMNShape id="BPMNShape_StartEvent_1" bpmnElement="_1">
+        <dc:Bounds height="36.0" width="36.0" x="45.0" y="45.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_CallActivity_1" bpmnElement="CallActivity_1" isExpanded="true">
+        <dc:Bounds height="50.0" width="110.0" x="140.0" y="38.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_EndEvent_1" bpmnElement="EndEvent_1">
+        <dc:Bounds height="36.0" width="36.0" x="318.0" y="45.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_DataObject_2" bpmnElement="id">
+        <dc:Bounds height="65.0" width="36.0" x="150.0" y="140.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_DataObject_3" bpmnElement="parentId">
+        <dc:Bounds height="65.0" width="36.0" x="260.0" y="160.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_1" bpmnElement="SequenceFlow_1" sourceElement="BPMNShape_CallActivity_1" targetElement="BPMNShape_EndEvent_1">
+        <di:waypoint xsi:type="dc:Point" x="250.0" y="63.0"/>
+        <di:waypoint xsi:type="dc:Point" x="280.0" y="63.0"/>
+        <di:waypoint xsi:type="dc:Point" x="280.0" y="63.0"/>
+        <di:waypoint xsi:type="dc:Point" x="318.0" y="63.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_2" bpmnElement="SequenceFlow_2" sourceElement="BPMNShape_StartEvent_1" targetElement="BPMNShape_CallActivity_1">
+        <di:waypoint xsi:type="dc:Point" x="81.0" y="63.0"/>
+        <di:waypoint xsi:type="dc:Point" x="107.0" y="63.0"/>
+        <di:waypoint xsi:type="dc:Point" x="107.0" y="63.0"/>
+        <di:waypoint xsi:type="dc:Point" x="140.0" y="63.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>, targetId2=-1]
+2014-09-11 16:48:12.080  WARN 15649 [http-nio-8010-exec-2] --- o.s.web.client.RestTemplate              : POST request for "http://localhost:8080/jbpm-console/rest/runtime/com.livinglab:remote:1.0/process/com.sample.bpmn.parent2-inverse/start" resulted in 500 (Internal Server Error); invoking error handler
+2014-09-11 16:48:12.125 ERROR 15649 [http-nio-8010-exec-2] --- o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpServerErrorException: 500 Internal Server Error] with root cause
+
+org.springframework.web.client.HttpServerErrorException: 500 Internal Server Error
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:94)
+	at org.springframework.web.client.RestTemplate.handleResponseError(RestTemplate.java:592)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:550)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:506)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:448)
+	at de.livinglab.RcvController.startProcess(RcvController.java:130)
+	at de.livinglab.RcvController.receiveMessage(RcvController.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:863)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1720)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1679)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2014-09-11 16:48:12.182  WARN 15649 [http-nio-8010-exec-1] --- o.s.web.client.RestTemplate              : POST request for "http://localhost:8010/rcv" resulted in 500 (Internal Server Error); invoking error handler
+2014-09-11 16:48:12.190 ERROR 15649 [http-nio-8010-exec-1] --- o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpServerErrorException: 500 Internal Server Error] with root cause
+
+org.springframework.web.client.HttpServerErrorException: 500 Internal Server Error
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:94)
+	at org.springframework.web.client.RestTemplate.handleResponseError(RestTemplate.java:592)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:550)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:506)
+	at org.springframework.web.client.RestTemplate.postForLocation(RestTemplate.java:309)
+	at de.livinglab.SendController.receiveMessage(SendController.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:863)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1720)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1679)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2014-09-11 16:49:15.115  INFO 15649 [Thread-1] --- ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@d09644a: startup date [Thu Sep 11 16:47:44 CEST 2014]; root of context hierarchy
+2014-09-11 16:49:15.120  INFO 15649 [Thread-1] --- o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2014-09-11 16:49:15.139  INFO 15649 [Thread-1] --- j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-09-11 16:49:15.142  INFO 15649 [Thread-1] --- org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2014-09-11 16:49:15.145  INFO 15649 [Thread-1] --- org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2014-09-11 18:21:46.322  INFO 17388 [main] --- de.livinglab.Application                 : Starting Application on esbdev-VirtualBox with PID 17388 (/home/esbdev/git/jbpm-services/rcvService/target/classes started by esbdev in /home/esbdev/git/jbpm-services/rcvService)
+2014-09-11 18:21:46.409  INFO 17388 [main] --- ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32a57b71: startup date [Thu Sep 11 18:21:46 CEST 2014]; root of context hierarchy
+2014-09-11 18:21:47.574  INFO 17388 [main] --- o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2014-09-11 18:21:49.585  INFO 17388 [main] --- trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6341f278] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-09-11 18:21:49.647  INFO 17388 [main] --- trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-09-11 18:21:49.658  INFO 17388 [main] --- trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-09-11 18:21:49.685  INFO 17388 [main] --- trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-09-11 18:21:50.658  INFO 17388 [main] --- .t.TomcatEmbeddedServletContainerFactory : Server initialized with port: 8010
+2014-09-11 18:21:51.403  INFO 17388 [main] --- o.apache.catalina.core.StandardService   : Starting service Tomcat
+2014-09-11 18:21:51.408  INFO 17388 [main] --- org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.54
+2014-09-11 18:21:51.648  INFO 17388 [localhost-startStop-1] --- o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2014-09-11 18:21:51.648  INFO 17388 [localhost-startStop-1] --- o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5242 ms
+2014-09-11 18:21:52.897  INFO 17388 [localhost-startStop-1] --- o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2014-09-11 18:21:52.899  INFO 17388 [localhost-startStop-1] --- o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2014-09-11 18:21:55.904  INFO 17388 [main] --- j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-09-11 18:21:55.928  INFO 17388 [main] --- o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-09-11 18:21:56.066  INFO 17388 [main] --- org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.5.Final}
+2014-09-11 18:21:56.068  INFO 17388 [main] --- org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2014-09-11 18:21:56.069  INFO 17388 [main] --- org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2014-09-11 18:21:56.294  INFO 17388 [main] --- o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-09-11 18:21:56.437  INFO 17388 [main] --- org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-09-11 18:21:56.650  INFO 17388 [main] --- o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2014-09-11 18:21:56.994  INFO 17388 [main] --- org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2014-09-11 18:21:57.000  INFO 17388 [main] --- org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2014-09-11 18:21:58.130  INFO 17388 [main] --- o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2014-09-11 18:21:58.473  INFO 17388 [main] --- s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/send],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void de.livinglab.SendController.receiveMessage(java.lang.String,java.lang.String)
+2014-09-11 18:21:58.478  INFO 17388 [main] --- s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rcv],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void de.livinglab.RcvController.receiveMessage(javax.servlet.http.HttpServletRequest,de.livinglab.Message)
+2014-09-11 18:21:58.488  INFO 17388 [main] --- s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2014-09-11 18:21:58.490  INFO 17388 [main] --- s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2014-09-11 18:21:58.589  INFO 17388 [main] --- o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2014-09-11 18:21:58.589  INFO 17388 [main] --- o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2014-09-11 18:21:59.536  INFO 17388 [main] --- o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2014-09-11 18:21:59.738  INFO 17388 [main] --- s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8010/http
+2014-09-11 18:21:59.778  INFO 17388 [main] --- de.livinglab.Application                 : Started Application in 14.554 seconds (JVM running for 15.906)
+2014-09-11 18:22:17.895  INFO 17388 [http-nio-8010-exec-1] --- o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2014-09-11 18:22:17.895  INFO 17388 [http-nio-8010-exec-1] --- o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2014-09-11 18:22:17.920  INFO 17388 [http-nio-8010-exec-1] --- o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2014-09-11 18:22:18.235  INFO 17388 [http-nio-8010-exec-1] --- de.livinglab.SendController              : Sending to: http://localhost:8010/rcv, Msg: Message [def1=com.sample.bpmn.parent1, def2=remote.testReceive, def3=com.sample.bpmn.hello, id1=1, id2=2, id3=3, v2=1, msg=<msg>bbalbalablabal</msg>, source2=<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:tns="http://www.jboss.org/drools" xmlns="http://www.jboss.org/drools" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd" id="Definition" expressionLanguage="http://www.mvel.org/2.0" targetNamespace="http://www.jboss.org/drools" typeLanguage="http://www.java.com/javaTypes">
+  <bpmn2:itemDefinition id="_String" structureRef="String"/>
+  <bpmn2:itemDefinition id="_Integer" structureRef="Integer"/>
+  <bpmn2:itemDefinition id="_Float" structureRef="Float"/>
+  <bpmn2:itemDefinition id="_Boolean" structureRef="Boolean"/>
+  <bpmn2:process id="remote.testReceive" tns:version="1" tns:packageName="defaultPackage" tns:adHoc="false" name="testReceive" isExecutable="true" processType="Private">
+    <bpmn2:startEvent id="_1" name="">
+      <bpmn2:outgoing>SequenceFlow_2</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:callActivity id="CallActivity_1" tns:waitForCompletion="true" tns:independent="false" name="Call sample" calledElement="com.sample.bpmn.hello">
+      <bpmn2:extensionElements>
+        <tns:onEntry-script scriptFormat="http://www.java.com/java">
+          <tns:script>kcontext.setVariable(&quot;id&quot;, kcontext.getProcessInstance().getId() + &quot;&quot;);</tns:script>
+        </tns:onEntry-script>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>SequenceFlow_2</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_1</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="InputOutputSpecification_3">
+        <bpmn2:dataInput id="DataInput_1" itemSubjectRef="_String" name="parentId"/>
+        <bpmn2:dataInput id="DataInput_2" itemSubjectRef="_String" name="parentId2"/>
+        <bpmn2:inputSet id="InputSet_1" name="Input Set 1">
+          <bpmn2:dataInputRefs>DataInput_1</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>DataInput_2</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_OutputSet_2" name="Output Set 2"/>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="DataInputAssociation_1">
+        <bpmn2:sourceRef>id</bpmn2:sourceRef>
+        <bpmn2:targetRef>DataInput_1</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="DataInputAssociation_2">
+        <bpmn2:sourceRef>parentId</bpmn2:sourceRef>
+        <bpmn2:targetRef>DataInput_2</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:callActivity>
+    <bpmn2:endEvent id="EndEvent_1" name="">
+      <bpmn2:incoming>SequenceFlow_1</bpmn2:incoming>
+      <bpmn2:terminateEventDefinition id="TerminateEventDefinition_1"/>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="SequenceFlow_1" tns:priority="1" name="" sourceRef="CallActivity_1" targetRef="EndEvent_1"/>
+    <bpmn2:sequenceFlow id="SequenceFlow_2" tns:priority="1" name="" sourceRef="_1" targetRef="CallActivity_1"/>
+    <bpmn2:dataObject id="id" name="id" itemSubjectRef="_String"/>
+    <bpmn2:dataObject id="parentId" name="parentId" itemSubjectRef="_String"/>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1" name="testReceive">
+    <bpmndi:BPMNPlane id="BPMNPlane_Process_1" bpmnElement="remote.testReceive">
+      <bpmndi:BPMNShape id="BPMNShape_StartEvent_1" bpmnElement="_1">
+        <dc:Bounds height="36.0" width="36.0" x="45.0" y="45.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_CallActivity_1" bpmnElement="CallActivity_1" isExpanded="true">
+        <dc:Bounds height="50.0" width="110.0" x="140.0" y="38.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_EndEvent_1" bpmnElement="EndEvent_1">
+        <dc:Bounds height="36.0" width="36.0" x="318.0" y="45.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_DataObject_2" bpmnElement="id">
+        <dc:Bounds height="65.0" width="36.0" x="150.0" y="140.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_DataObject_3" bpmnElement="parentId">
+        <dc:Bounds height="65.0" width="36.0" x="260.0" y="160.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_1" bpmnElement="SequenceFlow_1" sourceElement="BPMNShape_CallActivity_1" targetElement="BPMNShape_EndEvent_1">
+        <di:waypoint xsi:type="dc:Point" x="250.0" y="63.0"/>
+        <di:waypoint xsi:type="dc:Point" x="280.0" y="63.0"/>
+        <di:waypoint xsi:type="dc:Point" x="280.0" y="63.0"/>
+        <di:waypoint xsi:type="dc:Point" x="318.0" y="63.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_2" bpmnElement="SequenceFlow_2" sourceElement="BPMNShape_StartEvent_1" targetElement="BPMNShape_CallActivity_1">
+        <di:waypoint xsi:type="dc:Point" x="81.0" y="63.0"/>
+        <di:waypoint xsi:type="dc:Point" x="107.0" y="63.0"/>
+        <di:waypoint xsi:type="dc:Point" x="107.0" y="63.0"/>
+        <di:waypoint xsi:type="dc:Point" x="140.0" y="63.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>, targetId2=-1]
+2014-09-11 18:22:18.611 ERROR 17388 [http-nio-8010-exec-2] --- o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at de.livinglab.JbpmClientServiceImpl.isDeployed(JbpmClientServiceImpl.java:129)
+	at de.livinglab.RcvController.receiveMessage(RcvController.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:863)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1720)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1679)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2014-09-11 18:22:18.638  WARN 17388 [http-nio-8010-exec-1] --- o.s.web.client.RestTemplate              : POST request for "http://localhost:8010/rcv" resulted in 500 (Internal Server Error); invoking error handler
+2014-09-11 18:22:18.656 ERROR 17388 [http-nio-8010-exec-1] --- o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpServerErrorException: 500 Internal Server Error] with root cause
+
+org.springframework.web.client.HttpServerErrorException: 500 Internal Server Error
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:94)
+	at org.springframework.web.client.RestTemplate.handleResponseError(RestTemplate.java:592)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:550)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:506)
+	at org.springframework.web.client.RestTemplate.postForLocation(RestTemplate.java:309)
+	at de.livinglab.SendController.receiveMessage(SendController.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:863)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1720)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1679)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2014-09-11 18:23:24.486  INFO 17388 [Thread-1] --- ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32a57b71: startup date [Thu Sep 11 18:21:46 CEST 2014]; root of context hierarchy
+2014-09-11 18:23:24.497  INFO 17388 [Thread-1] --- o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2014-09-11 18:23:24.534  INFO 17388 [Thread-1] --- j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-09-11 18:23:24.535  INFO 17388 [Thread-1] --- org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2014-09-11 18:23:24.539  INFO 17388 [Thread-1] --- org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2014-09-11 18:29:19.615  INFO 17547 [main] --- de.livinglab.Application                 : Starting Application on esbdev-VirtualBox with PID 17547 (/home/esbdev/git/jbpm-services/rcvService/target/classes started by esbdev in /home/esbdev/git/jbpm-services/rcvService)
+2014-09-11 18:29:19.705  INFO 17547 [main] --- ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32a57b71: startup date [Thu Sep 11 18:29:19 CEST 2014]; root of context hierarchy
+2014-09-11 18:29:20.950  INFO 17547 [main] --- o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2014-09-11 18:29:22.930  INFO 17547 [main] --- trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$37e005ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-09-11 18:29:22.979  INFO 17547 [main] --- trationDelegate$BeanPostProcessorChecker : Bean 'transactionAttributeSource' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-09-11 18:29:22.998  INFO 17547 [main] --- trationDelegate$BeanPostProcessorChecker : Bean 'transactionInterceptor' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-09-11 18:29:23.013  INFO 17547 [main] --- trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2014-09-11 18:29:23.912  INFO 17547 [main] --- .t.TomcatEmbeddedServletContainerFactory : Server initialized with port: 8010
+2014-09-11 18:29:24.607  INFO 17547 [main] --- o.apache.catalina.core.StandardService   : Starting service Tomcat
+2014-09-11 18:29:24.609  INFO 17547 [main] --- org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.54
+2014-09-11 18:29:24.855  INFO 17547 [localhost-startStop-1] --- o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2014-09-11 18:29:24.855  INFO 17547 [localhost-startStop-1] --- o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5153 ms
+2014-09-11 18:29:26.032  INFO 17547 [localhost-startStop-1] --- o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2014-09-11 18:29:26.035  INFO 17547 [localhost-startStop-1] --- o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2014-09-11 18:29:28.368  INFO 17547 [main] --- j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2014-09-11 18:29:28.405  INFO 17547 [main] --- o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2014-09-11 18:29:28.633  INFO 17547 [main] --- org.hibernate.Version                    : HHH000412: Hibernate Core {4.3.5.Final}
+2014-09-11 18:29:28.634  INFO 17547 [main] --- org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2014-09-11 18:29:28.646  INFO 17547 [main] --- org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2014-09-11 18:29:28.888  INFO 17547 [main] --- o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2014-09-11 18:29:29.033  INFO 17547 [main] --- org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2014-09-11 18:29:29.282  INFO 17547 [main] --- o.h.h.i.ast.ASTQueryTranslatorFactory    : HHH000397: Using ASTQueryTranslatorFactory
+2014-09-11 18:29:29.640  INFO 17547 [main] --- org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2014-09-11 18:29:29.645  INFO 17547 [main] --- org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2014-09-11 18:29:30.414  INFO 17547 [main] --- o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2014-09-11 18:29:30.694  INFO 17547 [main] --- s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/send],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void de.livinglab.SendController.receiveMessage(java.lang.String,java.lang.String)
+2014-09-11 18:29:30.699  INFO 17547 [main] --- s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rcv],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void de.livinglab.RcvController.receiveMessage(javax.servlet.http.HttpServletRequest,de.livinglab.Message)
+2014-09-11 18:29:30.709  INFO 17547 [main] --- s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2014-09-11 18:29:30.712  INFO 17547 [main] --- s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2014-09-11 18:29:30.800  INFO 17547 [main] --- o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2014-09-11 18:29:30.806  INFO 17547 [main] --- o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2014-09-11 18:29:31.644  INFO 17547 [main] --- o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2014-09-11 18:29:31.799  INFO 17547 [main] --- s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8010/http
+2014-09-11 18:29:31.836  INFO 17547 [main] --- de.livinglab.Application                 : Started Application in 13.35 seconds (JVM running for 14.703)
+2014-09-11 18:29:40.204  INFO 17547 [http-nio-8010-exec-1] --- o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2014-09-11 18:29:40.204  INFO 17547 [http-nio-8010-exec-1] --- o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2014-09-11 18:29:40.226  INFO 17547 [http-nio-8010-exec-1] --- o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2014-09-11 18:29:40.545  INFO 17547 [http-nio-8010-exec-1] --- de.livinglab.SendController              : Sending to: http://localhost:8010/rcv, Msg: Message [def1=com.sample.bpmn.parent1, def2=remote.testReceive, def3=com.sample.bpmn.hello, id1=1, id2=2, id3=3, v2=1, msg=<msg>bbalbalablabal</msg>, source2=<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:tns="http://www.jboss.org/drools" xmlns="http://www.jboss.org/drools" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd" id="Definition" expressionLanguage="http://www.mvel.org/2.0" targetNamespace="http://www.jboss.org/drools" typeLanguage="http://www.java.com/javaTypes">
+  <bpmn2:itemDefinition id="_String" structureRef="String"/>
+  <bpmn2:itemDefinition id="_Integer" structureRef="Integer"/>
+  <bpmn2:itemDefinition id="_Float" structureRef="Float"/>
+  <bpmn2:itemDefinition id="_Boolean" structureRef="Boolean"/>
+  <bpmn2:process id="remote.testReceive" tns:version="1" tns:packageName="defaultPackage" tns:adHoc="false" name="testReceive" isExecutable="true" processType="Private">
+    <bpmn2:startEvent id="_1" name="">
+      <bpmn2:outgoing>SequenceFlow_2</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:callActivity id="CallActivity_1" tns:waitForCompletion="true" tns:independent="false" name="Call sample" calledElement="com.sample.bpmn.hello">
+      <bpmn2:extensionElements>
+        <tns:onEntry-script scriptFormat="http://www.java.com/java">
+          <tns:script>kcontext.setVariable(&quot;id&quot;, kcontext.getProcessInstance().getId() + &quot;&quot;);</tns:script>
+        </tns:onEntry-script>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>SequenceFlow_2</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_1</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="InputOutputSpecification_3">
+        <bpmn2:dataInput id="DataInput_1" itemSubjectRef="_String" name="parentId"/>
+        <bpmn2:dataInput id="DataInput_2" itemSubjectRef="_String" name="parentId2"/>
+        <bpmn2:inputSet id="InputSet_1" name="Input Set 1">
+          <bpmn2:dataInputRefs>DataInput_1</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>DataInput_2</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_OutputSet_2" name="Output Set 2"/>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="DataInputAssociation_1">
+        <bpmn2:sourceRef>id</bpmn2:sourceRef>
+        <bpmn2:targetRef>DataInput_1</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="DataInputAssociation_2">
+        <bpmn2:sourceRef>parentId</bpmn2:sourceRef>
+        <bpmn2:targetRef>DataInput_2</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:callActivity>
+    <bpmn2:endEvent id="EndEvent_1" name="">
+      <bpmn2:incoming>SequenceFlow_1</bpmn2:incoming>
+      <bpmn2:terminateEventDefinition id="TerminateEventDefinition_1"/>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="SequenceFlow_1" tns:priority="1" name="" sourceRef="CallActivity_1" targetRef="EndEvent_1"/>
+    <bpmn2:sequenceFlow id="SequenceFlow_2" tns:priority="1" name="" sourceRef="_1" targetRef="CallActivity_1"/>
+    <bpmn2:dataObject id="id" name="id" itemSubjectRef="_String"/>
+    <bpmn2:dataObject id="parentId" name="parentId" itemSubjectRef="_String"/>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1" name="testReceive">
+    <bpmndi:BPMNPlane id="BPMNPlane_Process_1" bpmnElement="remote.testReceive">
+      <bpmndi:BPMNShape id="BPMNShape_StartEvent_1" bpmnElement="_1">
+        <dc:Bounds height="36.0" width="36.0" x="45.0" y="45.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_CallActivity_1" bpmnElement="CallActivity_1" isExpanded="true">
+        <dc:Bounds height="50.0" width="110.0" x="140.0" y="38.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_EndEvent_1" bpmnElement="EndEvent_1">
+        <dc:Bounds height="36.0" width="36.0" x="318.0" y="45.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_DataObject_2" bpmnElement="id">
+        <dc:Bounds height="65.0" width="36.0" x="150.0" y="140.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_DataObject_3" bpmnElement="parentId">
+        <dc:Bounds height="65.0" width="36.0" x="260.0" y="160.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_1" bpmnElement="SequenceFlow_1" sourceElement="BPMNShape_CallActivity_1" targetElement="BPMNShape_EndEvent_1">
+        <di:waypoint xsi:type="dc:Point" x="250.0" y="63.0"/>
+        <di:waypoint xsi:type="dc:Point" x="280.0" y="63.0"/>
+        <di:waypoint xsi:type="dc:Point" x="280.0" y="63.0"/>
+        <di:waypoint xsi:type="dc:Point" x="318.0" y="63.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_2" bpmnElement="SequenceFlow_2" sourceElement="BPMNShape_StartEvent_1" targetElement="BPMNShape_CallActivity_1">
+        <di:waypoint xsi:type="dc:Point" x="81.0" y="63.0"/>
+        <di:waypoint xsi:type="dc:Point" x="107.0" y="63.0"/>
+        <di:waypoint xsi:type="dc:Point" x="107.0" y="63.0"/>
+        <di:waypoint xsi:type="dc:Point" x="140.0" y="63.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>, targetId2=-1]
+2014-09-11 18:29:40.684  INFO 17547 [http-nio-8010-exec-2] --- de.livinglab.JbpmClientServiceImpl       : requesting http://localhost:8080/jbpm-console/rest/runtime/com.livinglab:remote:1.0/history/process/remote.testReceive
+2014-09-11 18:29:40.752 ERROR 17547 [http-nio-8010-exec-2] --- o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+
+java.lang.NullPointerException: null
+	at de.livinglab.JbpmClientServiceImpl.isDeployed(JbpmClientServiceImpl.java:130)
+	at de.livinglab.RcvController.receiveMessage(RcvController.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:863)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1720)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1679)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2014-09-11 18:29:40.823  WARN 17547 [http-nio-8010-exec-1] --- o.s.web.client.RestTemplate              : POST request for "http://localhost:8010/rcv" resulted in 500 (Internal Server Error); invoking error handler
+2014-09-11 18:29:40.848 ERROR 17547 [http-nio-8010-exec-1] --- o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpServerErrorException: 500 Internal Server Error] with root cause
+
+org.springframework.web.client.HttpServerErrorException: 500 Internal Server Error
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:94)
+	at org.springframework.web.client.RestTemplate.handleResponseError(RestTemplate.java:592)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:550)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:506)
+	at org.springframework.web.client.RestTemplate.postForLocation(RestTemplate.java:309)
+	at de.livinglab.SendController.receiveMessage(SendController.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:749)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:689)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:83)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:938)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:863)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:646)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:501)
+	at org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:683)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1720)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1679)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2014-09-11 18:29:58.157  INFO 17547 [Thread-1] --- ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32a57b71: startup date [Thu Sep 11 18:29:19 CEST 2014]; root of context hierarchy
+2014-09-11 18:29:58.171  INFO 17547 [Thread-1] --- o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2014-09-11 18:29:58.206  INFO 17547 [Thread-1] --- j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2014-09-11 18:29:58.207  INFO 17547 [Thread-1] --- org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2014-09-11 18:29:58.212  INFO 17547 [Thread-1] --- org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete

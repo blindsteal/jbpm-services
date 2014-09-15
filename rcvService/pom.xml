@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.livinglab</groupId>
+	<groupId>de.livinglab</groupId>
 	<artifactId>rcvService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
@@ -15,7 +15,7 @@
 	<properties>
 		<java.version>1.7</java.version>
 		<guava.version>18.0-rc2</guava.version>
-		<start-class>com.livinglab.Application</start-class>
+		<start-class>de.livinglab.Application</start-class>
 	</properties>
 
 	<dependencies>

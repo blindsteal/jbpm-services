@@ -5,7 +5,7 @@
     <bpmn2:startEvent id="_1" name="">
       <bpmn2:outgoing>SequenceFlow_2</bpmn2:outgoing>
     </bpmn2:startEvent>
-    <bpmn2:callActivity id="CallActivity_1" tns:waitForCompletion="true" tns:independent="false" name="Call p2" calledElement="com.sample.bpmn.parent2">
+    <bpmn2:callActivity id="CallActivity_1" tns:waitForCompletion="true" tns:independent="false" name="Call p2" calledElement="remote.testReceive">
       <bpmn2:extensionElements>
         <tns:onEntry-script scriptFormat="http://www.java.com/java">
           <tns:script>kcontext.setVariable(&quot;id&quot;, kcontext.getProcessInstance().getId() + &quot;&quot;);</tns:script>

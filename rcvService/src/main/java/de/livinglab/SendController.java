@@ -1,4 +1,4 @@
-package com.livinglab;
+package de.livinglab;
 
 import java.util.List;
 
@@ -29,27 +29,22 @@ public class SendController {
 	@Autowired
 	MappingEntryRepository mapping;
 	
+	@Autowired
+	ObjectSerializerService oss;
+	
 	@RequestMapping(value = "/send", method = RequestMethod.POST)
 	public void receiveMessage(
 			@RequestBody String body,
-			@RequestParam(value="host") String host,
-			@RequestParam(value="def1") String def1,
-			@RequestParam(value="id1") int id1, 
-			@RequestParam(value="def2") String def2,
-			@RequestParam(value="id2") int id2, 
-			@RequestParam(value="v2") String v2, 
-			@RequestParam(value="def3") String def3,
-			@RequestParam(value="id3") int id3){
+			@RequestParam(value="host") String host){
+		
+		Message msg = oss.stringToObject(body);
 		
 		String rcvUrl = String.format(targetUrl, host);
 		
-		int targetId2 = -1;
-		List<MappingEntry> mappingsFor2 = mapping.findByLocalDef2AndLocalId2(def2, id2);
+		List<MappingEntry> mappingsFor2 = mapping.findByLocalDef2AndLocalId2(msg.getDef2(), msg.getId2());
 		if(!mappingsFor2.isEmpty()){
-			targetId2 = mappingsFor2.get(0).getRemoteId2();
+			msg.setTargetId2(mappingsFor2.get(0).getRemoteId2());
 		}
-		
-		Message msg = new Message(def1, def2, def3, id1, id2, id3, v2, body, targetId2, "");
 		
 		log.info("Sending to: " + rcvUrl + ", Msg: " + msg);
 		
