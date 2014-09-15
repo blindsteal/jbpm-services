@@ -19,7 +19,6 @@ import org.kie.api.runtime.process.WorkItemManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@SuppressWarnings("restriction")
 public class SendWIH implements WorkItemHandler {
 	private static final Logger logger = LoggerFactory.getLogger(SendWIH.class);
 	private boolean logThrownException = false;

@@ -4,7 +4,7 @@
   <bpmn2:itemDefinition id="_Integer" structureRef="Integer"/>
   <bpmn2:itemDefinition id="_Float" structureRef="Float"/>
   <bpmn2:itemDefinition id="_Boolean" structureRef="Boolean"/>
-  <bpmn2:process id="remote.testReceive" tns:version="1" tns:packageName="defaultPackage" tns:adHoc="false" name="testReceive" isExecutable="true" processType="Private">
+  <bpmn2:process id="remote.middle-inverse" tns:version="1" tns:packageName="defaultPackage" tns:adHoc="false" name="testReceive" isExecutable="true" processType="Private">
     <bpmn2:startEvent id="_1" name="">
       <bpmn2:outgoing>SequenceFlow_2</bpmn2:outgoing>
     </bpmn2:startEvent>
@@ -44,7 +44,7 @@
     <bpmn2:dataObject id="parentId" name="parentId" itemSubjectRef="_String"/>
   </bpmn2:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1" name="testReceive">
-    <bpmndi:BPMNPlane id="BPMNPlane_Process_1" bpmnElement="remote.testReceive">
+    <bpmndi:BPMNPlane id="BPMNPlane_Process_1" bpmnElement="remote.middle-inverse">
       <bpmndi:BPMNShape id="BPMNShape_StartEvent_1" bpmnElement="_1">
         <dc:Bounds height="36.0" width="36.0" x="45.0" y="45.0"/>
       </bpmndi:BPMNShape>

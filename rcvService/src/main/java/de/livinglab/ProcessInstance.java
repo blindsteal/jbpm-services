@@ -1,10 +1,13 @@
 package de.livinglab;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown=true)
 public class ProcessInstance {
 
+
+	@JsonProperty("process-id")
 	private String processId;
 	private int id;
 	private int state;

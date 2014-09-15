@@ -1,19 +1,20 @@
 package de.livinglab;
 
-import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown=true)
 public class InstanceLog {
+	@JsonProperty("process-instance-log")
+	private InstanceLogEntry entry;
 
-	private List<InstanceLogEntry> result;
-
-	public List<InstanceLogEntry> getResult() {
-		return result;
+	public InstanceLogEntry getEntry() {
+		return entry;
 	}
 
-	public void setResult(List<InstanceLogEntry> result) {
-		this.result = result;
+	public void setEntry(InstanceLogEntry entry) {
+		this.entry = entry;
 	}
+
+
 }

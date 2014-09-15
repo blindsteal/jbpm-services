@@ -15,7 +15,6 @@ import org.kie.api.runtime.process.WorkItemManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@SuppressWarnings("restriction")
 public class ReceiveWIH implements WorkItemHandler {
     private static final Logger logger = LoggerFactory.getLogger(ReceiveWIH.class);
 	private Path path = Paths.get(System.getProperty("user.home")+"/msg.xml");
