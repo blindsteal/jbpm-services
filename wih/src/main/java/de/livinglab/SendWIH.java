@@ -56,7 +56,7 @@ public class SendWIH implements WorkItemHandler {
 				.getProcess().getVersion();
 		String id1 = (String) params.get("id1");
 		String def1 = "";
-		if(!id1.equals("")){
+		if(params.get("id1") != null){
 			def1  = ksession.getProcessInstance(Long.parseLong(id1))
 					.getProcess().getId();
 		}
