@@ -56,9 +56,11 @@ public class SendWIH implements WorkItemHandler {
 				.getProcess().getVersion();
 		String id1 = (String) params.get("id1");
 		String def1 = "";
+		int id1i = -1;
 		if(params.get("id1") != null){
 			def1  = ksession.getProcessInstance(Long.parseLong(id1))
 					.getProcess().getId();
+			id1i = Integer.parseInt(id1);
 		}
 		String host = (params.containsKey("Host")) ? (String) params
 				.get("Host") : defaultReceiver;
@@ -68,7 +70,7 @@ public class SendWIH implements WorkItemHandler {
 
 		String source2 = getProcessSource(Long.parseLong(id2));
 
-		Message msg = new Message(def1, def2, def3, Integer.parseInt(id1),
+		Message msg = new Message(def1, def2, def3, id1i,
 				Integer.parseInt(id2), new Long(id3).intValue(), v2,
 				(String) params.get("Message"), -1, source2);
 		String serializedMsg = oss.objectToString(msg);
