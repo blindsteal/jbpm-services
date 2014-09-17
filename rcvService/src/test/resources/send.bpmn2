@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions targetNamespace="http://www.jboss.org/drools" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" xmlns="http://www.jboss.org/drools" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd" id="_w7vSkD3HEeS0t560BZ5mJQ">
+  <bpmn2:itemDefinition id="ItemDefinition_1" structureRef="StringDataType"/>
+  <bpmn2:process id="Process_1" drools:version="1" drools:packageName="defaultPackage" drools:adHoc="false" isExecutable="true">
+    <bpmn2:startEvent id="StartEvent_1" name="">
+      <bpmn2:outgoing>SequenceFlow_1</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:task id="Task_1" drools:taskName="SendMessage" drools:displayName="Nachricht senden" drools:icon="task.png" name="SendMessage">
+      <bpmn2:incoming>SequenceFlow_1</bpmn2:incoming>
+      <bpmn2:outgoing>SequenceFlow_2</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_InputOutputSpecification_2">
+        <bpmn2:dataInput id="_DataInput_2" itemSubjectRef="ItemDefinition_1" name="id1"/>
+        <bpmn2:dataInput id="_DataInput_3" itemSubjectRef="ItemDefinition_1" name="id2"/>
+        <bpmn2:dataInput id="_DataInput_4" itemSubjectRef="ItemDefinition_1" name="Host"/>
+        <bpmn2:dataInput id="_DataInput_5" itemSubjectRef="ItemDefinition_1" name="Message"/>
+        <bpmn2:inputSet id="_InputSet_2"/>
+        <bpmn2:inputSet id="_InputSet_3" name="New Input Set">
+          <bpmn2:dataInputRefs>_DataInput_2</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_DataInput_3</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_DataInput_4</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_DataInput_5</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_OutputSet_2"/>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_DataInputAssociation_2">
+        <bpmn2:targetRef>_DataInput_2</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_DataInputAssociation_3">
+        <bpmn2:targetRef>_DataInput_3</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_DataInputAssociation_4">
+        <bpmn2:targetRef>_DataInput_4</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation id="_DataInputAssociation_5">
+        <bpmn2:targetRef>_DataInput_5</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:task>
+    <bpmn2:sequenceFlow id="SequenceFlow_1" drools:priority="1" sourceRef="StartEvent_1" targetRef="Task_1"/>
+    <bpmn2:endEvent id="EndEvent_1" name="">
+      <bpmn2:incoming>SequenceFlow_2</bpmn2:incoming>
+      <bpmn2:terminateEventDefinition id="TerminateEventDefinition_1"/>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="SequenceFlow_2" drools:priority="1" sourceRef="Task_1" targetRef="EndEvent_1"/>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1">
+      <bpmndi:BPMNShape id="BPMNShape_StartEvent_1" bpmnElement="StartEvent_1">
+        <dc:Bounds height="36.0" width="36.0" x="142.0" y="142.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_Task_1" bpmnElement="Task_1">
+        <dc:Bounds height="50.0" width="110.0" x="210.0" y="135.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_EndEvent_1" bpmnElement="EndEvent_1">
+        <dc:Bounds height="36.0" width="36.0" x="388.0" y="142.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_1" bpmnElement="SequenceFlow_1" sourceElement="BPMNShape_StartEvent_1" targetElement="BPMNShape_Task_1">
+        <di:waypoint xsi:type="dc:Point" x="178.0" y="160.0"/>
+        <di:waypoint xsi:type="dc:Point" x="206.0" y="160.0"/>
+        <di:waypoint xsi:type="dc:Point" x="206.0" y="160.0"/>
+        <di:waypoint xsi:type="dc:Point" x="210.0" y="160.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_2" bpmnElement="SequenceFlow_2" sourceElement="BPMNShape_Task_1" targetElement="BPMNShape_EndEvent_1">
+        <di:waypoint xsi:type="dc:Point" x="320.0" y="160.0"/>
+        <di:waypoint xsi:type="dc:Point" x="368.0" y="160.0"/>
+        <di:waypoint xsi:type="dc:Point" x="368.0" y="160.0"/>
+        <di:waypoint xsi:type="dc:Point" x="388.0" y="160.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn2:definitions>

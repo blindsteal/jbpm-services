@@ -1,6 +1,7 @@
 package de.livinglab;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.List;
@@ -13,6 +14,11 @@ import nu.xom.Text;
 import nu.xom.XPathContext;
 
 import org.apache.tomcat.util.codec.binary.Base64;
+import org.eclipse.jgit.api.CloneCommand;
+import org.eclipse.jgit.api.Git;
+import org.eclipse.jgit.api.errors.GitAPIException;
+import org.eclipse.jgit.transport.CredentialsProvider;
+import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +30,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
+
 import com.google.common.base.Joiner;
 import com.google.common.base.Splitter;
 import com.google.common.collect.Lists;
@@ -145,7 +152,13 @@ public class JbpmClientServiceImpl implements JbpmClientService {
 		processPath += File.separator + splitDep.get(1);
 		String filename = def + "_" + ver + ".bpmn2";
 		File f = new File(processPath + File.separator + filename);
-		log.info("Saving process to file: " + f.getAbsolutePath());
+		if(!f.exists())
+			try {
+				f.createNewFile();
+			} catch (IOException e) {
+				log.error("Creating file failed: "+e.getMessage());
+			}
+		log.info("Process file: " + f.getAbsolutePath());
 		return f;
 	}
 
@@ -157,8 +170,8 @@ public class JbpmClientServiceImpl implements JbpmClientService {
 		String pomPath = basedir + File.separator + splitDep.get(1)
 				+ File.separator + "pom.xml";
 		File pom = new File(pomPath);
-		
-		log.info("Parsing POM at "+pomPath);
+
+		log.info("Parsing POM at " + pomPath);
 
 		Builder xom = new Builder();
 		Document doc = null;
@@ -171,9 +184,9 @@ public class JbpmClientServiceImpl implements JbpmClientService {
 		Element root = doc.getRootElement();
 		XPathContext context = XPathContext.makeNamespaceContext(root);
 		context.addNamespace("mv", "http://maven.apache.org/POM/4.0.0");
-		Element version = (Element) (root.query("mv:version", context )).get(0);
+		Element version = (Element) (root.query("mv:version", context)).get(0);
 		String old = ((Text) version.getChild(0)).getValue();
-		
+
 		List<String> splitVer = Lists.newArrayList(Splitter.on(".").split(old));
 		int raised = Integer.parseInt(splitVer.get(1)) + 1;
 		splitVer.set(1, raised + "");
@@ -181,15 +194,15 @@ public class JbpmClientServiceImpl implements JbpmClientService {
 		version.removeChild(0);
 		version.appendChild(newVer);
 		log.info("Raised version from " + old + " to " + newVer);
-		
+
 		pom.delete();
 		try {
 			pom.createNewFile();
-		PrintStream pw = new PrintStream(pom);
-		pw.print(doc.toXML());
-		pw.close();
+			PrintStream pw = new PrintStream(pom);
+			pw.print(doc.toXML());
+			pw.close();
 		} catch (IOException e) {
-			log.error("POM write error: "+e.getMessage());
+			log.error("POM write error: " + e.getMessage());
 		}
 
 		return newVer;
@@ -211,6 +224,49 @@ public class JbpmClientServiceImpl implements JbpmClientService {
 				String.format(undeployUrl, dep), HttpMethod.POST, req,
 				String.class);
 		log.info("Undeployed " + dep);
+	}
 
+	@Override
+	public Git cloneRepo(String user, String pw, String repo, File targetDir) {
+		String repoURI = "ssh://" + user + "@localhost:8001/" + repo;
+		log.info("Cloning "+ repoURI +" into "+targetDir);
+		CredentialsProvider creds = new UsernamePasswordCredentialsProvider(
+				user, pw);
+		CloneCommand cc = Git.cloneRepository();
+		Git git = null;
+		try {
+			git = cc.setURI(repoURI )
+					.setDirectory(targetDir).setCredentialsProvider(creds)
+					.call();
+		} catch (GitAPIException e) {
+			log.error("Some git error: " + e.getMessage());
+		}
+		return git;
+	}
+
+	@Override
+	public void write(String source, File newProcess) {
+		PrintStream pw = null;
+		try {
+			pw = new PrintStream(newProcess);
+		} catch (FileNotFoundException e) {
+			log.error("Print error: "+e.getMessage());
+		}
+		pw.print(source);
+		pw.close();
+	}
+
+	@Override
+	public void addAllAndPush(String user, String pw, Git git) {
+		CredentialsProvider creds = new UsernamePasswordCredentialsProvider(
+				user, pw);
+		try {
+			git.add().addFilepattern(".").call();
+			git.commit().setMessage("Generated process. " + System.currentTimeMillis()).call();
+			git.push().setCredentialsProvider(creds).call();
+			log.info("Pushed successfully.");
+		} catch (GitAPIException e) {
+			log.error("Some git exception: "+e.getMessage());
+		}
 	}
 }

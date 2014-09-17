@@ -25,12 +25,13 @@ import org.springframework.test.context.web.WebAppConfiguration;
 
 import de.livinglab.Application;
 import de.livinglab.JbpmClientService;
+import de.livinglab.TransformationService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
 @WebAppConfiguration
 @IntegrationTest
-public class JGitTests {
+public class TransformTests {
 
 	private static final String REMOTE_URL = "localhost:8001";
 	private static final String USER = "admin";
@@ -42,9 +43,8 @@ public class JGitTests {
 	private static final String PROJECT = "remote";
 
 	@Autowired
-	JbpmClientService jservice;
+	TransformationService tservice;
 
-	@Ignore
 	@Test
 	public void testClone() throws IOException {
 
@@ -52,22 +52,13 @@ public class JGitTests {
 		String source = new String(Files.readAllBytes(cpr.getFile().toPath()),
 				StandardCharsets.UTF_8);
 
-		File localPath = File.createTempFile("TestGitRepository", "");
-		localPath.delete();
-		
-		Git git = jservice.cloneRepo(USER, PW, REPO, localPath);
+		String inverse = tservice.getInverse(source);
 
-		File newProcess = jservice.getProcessFile(DEP, DEF, VER, git.getRepository().getDirectory().getParent());
+		System.out.println(source);
 		
-		jservice.write(source, newProcess);
+		System.out.println("=============================================");
 		
-		jservice.raiseDeploymentVersion(DEP, git.getRepository().getDirectory().getParent());
-
-		jservice.addAllAndPush(USER, PW, git);
-		
-		jservice.deploy(REPO, PROJECT);
-		
-		git.getRepository().close();
+		System.out.println(inverse);
 	}
 
 }

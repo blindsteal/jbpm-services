@@ -2,6 +2,8 @@ package de.livinglab;
 
 import java.io.File;
 
+import org.eclipse.jgit.api.Git;
+
 public interface JbpmClientService {
 
 	int findFirstActiveChild(String dep, int instId);
@@ -12,5 +14,8 @@ public interface JbpmClientService {
 	String raiseDeploymentVersion(String dep, String basedir);
 	void deploy(String repo, String project);
 	void undeploy(String dep);
+	Git cloneRepo(String user, String pw, String repo, File targetDir);
+	void write(String source, File newProcess);
+	void addAllAndPush(String user, String pw, Git git);
 	
 }
