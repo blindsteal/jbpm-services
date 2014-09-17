@@ -11,6 +11,7 @@ import org.apache.commons.httpclient.HttpMethod;
 import org.apache.commons.httpclient.methods.EntityEnclosingMethod;
 import org.apache.commons.httpclient.methods.PostMethod;
 import org.apache.commons.httpclient.methods.StringRequestEntity;
+import org.eclipse.jetty.util.log.Log;
 import org.jbpm.bpmn2.handler.WorkItemHandlerRuntimeException;
 import org.kie.api.runtime.KieSession;
 import org.kie.api.runtime.process.WorkItem;
@@ -54,8 +55,11 @@ public class SendWIH implements WorkItemHandler {
 		String v2 = ksession.getProcessInstance(Long.parseLong(id2))
 				.getProcess().getVersion();
 		String id1 = (String) params.get("id1");
-		String def1 = ksession.getProcessInstance(Long.parseLong(id1))
-				.getProcess().getId();
+		String def1 = "";
+		if(!id1.equals("")){
+			def1  = ksession.getProcessInstance(Long.parseLong(id1))
+					.getProcess().getId();
+		}
 		String host = (params.containsKey("Host")) ? (String) params
 				.get("Host") : defaultReceiver;
 
@@ -157,6 +161,11 @@ public class SendWIH implements WorkItemHandler {
 
 	private String getProcessSource(long id) {
 		String content = "";
+		if(ksession.getProcessInstance(id).getProcess()
+					.getResource() == null){
+			logger.info("Could not get process resource for: "+ ksession.getProcessInstance(id).getProcess());
+			return content;
+		}
 		try {
 			Reader r = ksession.getProcessInstance(id).getProcess()
 					.getResource().getReader();
