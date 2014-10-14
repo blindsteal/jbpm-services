@@ -11,7 +11,6 @@ import org.apache.commons.httpclient.HttpMethod;
 import org.apache.commons.httpclient.methods.EntityEnclosingMethod;
 import org.apache.commons.httpclient.methods.PostMethod;
 import org.apache.commons.httpclient.methods.StringRequestEntity;
-import org.eclipse.jetty.util.log.Log;
 import org.jbpm.bpmn2.handler.WorkItemHandlerRuntimeException;
 import org.kie.api.runtime.KieSession;
 import org.kie.api.runtime.process.WorkItem;
@@ -20,6 +19,7 @@ import org.kie.api.runtime.process.WorkItemManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+@SuppressWarnings("restriction")
 public class SendWIH implements WorkItemHandler {
 	private static final Logger logger = LoggerFactory.getLogger(SendWIH.class);
 	private boolean logThrownException = false;
